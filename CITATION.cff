@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: "CES–CPI Household Spending Crosswalk, 2023–2024"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+abstract: >-
+  A category-level crosswalk between US household spending (Bureau of Labor
+  Statistics Consumer Expenditure Survey, 2024 release) and consumer prices
+  (BLS Consumer Price Index, CPI-U twelve-month averages), covering the same
+  two calendar years, 2023 and 2024. Each pairing carries a quality label, and
+  one pairing (CES Housing against CPI Shelter) is marked NOT COMPARABLE and
+  excluded from analysis. Includes a price-adjusted residual per category,
+  which is a deflation and not a measure of quantity.
+authors:
+  - name: "Bromoney"
+    website: "https://bromoney.com"
+version: "1.0.0"
+license: CC-BY-4.0
+keywords:
+  - household expenditure
+  - consumer price index
+  - consumer expenditure survey
+  - United States
+  - crosswalk
+  - price adjustment
+repository-code: "https://github.com/Bromoney-US/average-household-expenses"
+url: "https://bromoney.com/en/data/ces-cpi-household-spending-crosswalk-2023-2024"
+references:
+  - type: report
+    title: "Consumer Expenditures--2024"
+    authors:
+      - name: "U.S. Bureau of Labor Statistics"
+    year: 2025
+    url: "https://www.bls.gov/news.release/archives/cesan_12192025.pdf"
+    notes: "USDL-25-1586, released 19 December 2025"
+  - type: database
+    title: "Consumer Price Index, CPI-U, US city average, annual averages"
+    authors:
+      - name: "U.S. Bureau of Labor Statistics"
+    year: 2026
+    url: "https://www.bls.gov/developers/"
+    notes: "Retrieved via the BLS public data API v1 on 20 August 2026"
+

@@ -1,0 +1,11 @@
+series,label,value,note,source
+quintile,Lowest fifth,2921,Annual $35046 divided by twelve,BLS CES 2024 table C
+quintile,Second fifth,4171,Annual $50054 divided by twelve,BLS CES 2024 table C
+quintile,Third fifth,5575,Annual $66900 divided by twelve,BLS CES 2024 table C
+quintile,Fourth fifth,7498,Annual $89972 divided by twelve,BLS CES 2024 table C
+quintile,Highest fifth,12529,Annual $150342 divided by twelve,BLS CES 2024 table C
+quintile_mean,National mean,6545,Annual $78535 divided by twelve,BLS CES 2024 table A
+lag_months,BLS CPI,0.7,Reference period ended 2026-07-31; 20 days to 2026-08-20,BLS CPI July 2026
+lag_months,BEA Personal Income and Outlays,1.7,Reference period ended 2026-06-30; 51 days to 2026-08-20,BEA 26-36
+lag_months,Federal Reserve SHED,9.7,Field period ended 2025-10-28; 296 days to 2026-08-20,Federal Reserve SHED 2025
+lag_months,BLS Consumer Expenditure Survey,19.6,Reference year ended 2024-12-31; 597 days to 2026-08-20,BLS CES 2024

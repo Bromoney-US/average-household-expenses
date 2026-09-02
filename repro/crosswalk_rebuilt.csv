@@ -1,0 +1,13 @@
+﻿ces_category,ces_2023_usd,ces_2024_usd,ces_change_pct,ces_significant_95,cpi_counterpart,cpi_series_id,cpi_2023_index,cpi_2024_index,cpi_change_pct,crosswalk_quality,price_adjusted_residual_pct
+"Meats, poultry, fish and eggs",1164,1414,21.5,yes,"Meats, poultry, fish, and eggs",CUUR0000SAF112,319.37,326.254,2.16,direct,18.9
+Drugs,591,658,11.3,no,Prescription drugs,CUUR0000SEMF01,549.458,556.941,1.36,partial: CE Drugs includes nonprescription,9.8
+Dairy products,602,631,4.8,yes,Dairy and related products,CUUR0000SEFJ,269.528,268.876,-0.24,direct,5.1
+Gasoline,2449,2411,-1.6,no,Gasoline (all types),CUUR0000SETB01,311.574,295.73,-5.09,direct,3.7
+Food at home,6053,6224,2.8,no,Food at home,CUUR0000SAF11,302.929,306.536,1.19,direct,1.6
+Owned dwellings,8699,9310,7.0,yes,Owners' equivalent rent,CUUR0000SEHC,390.191,411.548,5.47,caution: CE records reported owned-dwelling expenditures but excludes mortgage principal; CPI OER is imputed,1.4
+Rented dwellings,5370,5660,5.4,yes,Rent of primary residence,CUUR0000SEHA,399.643,420.06,5.11,close,0.3
+Apparel and services,2041,2001,-2.0,no,Apparel,CUUR0000SAA,130.579,131.483,0.69,"partial: CE line includes services, CPI Apparel is goods only",-2.7
+Food away from home,3933,3945,0.3,no,Food away from home,CUUR0000SEFV,354.256,368.743,4.09,direct,-3.6
+Vehicle insurance,1775,1993,12.3,yes,Motor vehicle insurance,CUUR0000SETE,716.004,843.098,17.75,direct,-4.6
+Cereals and bakery products,830,779,-6.1,yes,Cereals and bakery products,CUUR0000SAF111,354.269,356.133,0.53,direct,-6.6
+Housing (whole component),25436,26266,3.3,yes,Shelter,CUUR0000SAH1,380.643,400.561,5.23,"NOT COMPARABLE: CE Housing includes utilities, household operations and furnishings; CPI Shelter does not. Listed for transparency, excluded from analysis.",
