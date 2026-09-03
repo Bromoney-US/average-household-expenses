@@ -8,8 +8,8 @@ Inputs, both in this directory:
 Every number plotted comes from one of those two files. Nothing is hard-coded here.
 
 Run:  python build_charts.py
-Out:  ../charts/*.svg and ../charts/*.png — 16:9 and 4:3 for all three,
-      plus 1:1 for the flagship. Each aspect gets its own margins.
+Out:  ../charts/*.svg and ../charts/*.png — 16:9, 4:3 and 1:1 for all three.
+      Each aspect gets its own margins.
 
 Output is deterministic: PNG and SVG are byte-identical between runs
 (SVG date metadata is suppressed, hash salt is fixed).
@@ -140,7 +140,7 @@ def chart_scatter(aspect="16x9"):
     ax.axhline(0, color=RULE, lw=1, zorder=1)
     ax.axvline(0, color=RULE, lw=1, zorder=1)
     ax.set_xlabel("CPI price change, 2023 to 2024 annual averages (%)", fontsize=9, labelpad=8)
-    ax.set_ylabel("CES spending change, 2023 to 2024 (%)", fontsize=9)
+    ax.set_ylabel("CE spending change, 2023 to 2024 (%)", fontsize=9)
     ax.set_xlim(-8.5, hi)
     ax.set_ylim(-9.5, 26)
     ax.set_title("Where household spending outran prices — and where it lagged",
@@ -163,7 +163,7 @@ def chart_scatter(aspect="16x9"):
 
     footer(fig, "Above the dashed line, outlay grew faster than the index; below it, more slowly.\n"
                 "The gap is arithmetic, not a measure of quantity.\n"
-                "Bromoney analysis of BLS CES 2024 and CPI-U annual averages (M13).\n"
+                "Bromoney analysis of BLS CE 2024 and CPI-U annual averages (M13).\n"
                 "Housing/Shelter excluded as not comparable.", fy, fx)
     save(fig, "ces-cpi-spending-vs-prices-2023-2024" + suffix_for(aspect))
 
@@ -209,7 +209,7 @@ def chart_quintiles(aspect="16x9"):
     ax.set_axisbelow(True)
 
     footer(fig, "The bottom fifth spends less than half the mean; the top fifth nearly twice it.\n"
-                "Bromoney analysis of BLS CES 2024, table C. Annual totals divided by twelve.", fy, fx)
+                "Bromoney analysis of BLS CE 2024, table C. Annual totals divided by twelve.", fy, fx)
     save(fig, "average-monthly-expenses-by-quintile-2024" + suffix_for(aspect))
 
 
@@ -251,7 +251,7 @@ def chart_clocks(aspect="16x9"):
     ax.set_yticklabels([CLOCK_WRAP.get(r["label"], r["label"]) for r in rows],
                        fontsize=9, linespacing=1.4)
     ax.invert_yaxis()
-    ax.set_xlabel("Age of the newest data on 20 August 2026, from the end of the period it covers (months)",
+    ax.set_xlabel("Age of the newest data on 3 September 2026, from the end of the period it covers (months)",
                   fontsize=8.5, labelpad=8)
     ax.set_xlim(0, 24)
     ax.set_ylim(3.7, -0.7)
@@ -276,9 +276,9 @@ if __name__ == "__main__":
     for a in ("16x9", "4x3", "1x1"):
         chart_scatter(a)
     print("chart 2 — quintiles")
-    for a in ("16x9", "4x3"):
+    for a in ("16x9", "4x3", "1x1"):
         chart_quintiles(a)
     print("chart 3 — four clocks")
-    for a in ("16x9", "4x3"):
+    for a in ("16x9", "4x3", "1x1"):
         chart_clocks(a)
     print("\ndone")
